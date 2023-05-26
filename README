@@ -17,3 +17,7 @@
 # them to the dataset, which I exported as a new csv file.
 # 4) Then, I created my file hdfc_shiny_leaflet.R, read in the file and created the dashboard using the libraries
 # shiny, shinydashboard, ggplot2, dplyr, and "leaflet".
+
+## THE DASHBOARD
+
+# The dashboard can be seen in the attached file hdfc_dashboard.png.
