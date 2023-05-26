@@ -1,0 +1,19 @@
+## OBJECTIVE
+
+# In March 2023, I was working on a larger project about affordable housing in NYC, and as part of it, 
+# I collected all the available HDFC co-op units listed on StreetEasy.com. I wanted to create a dashboard
+# that showed a map with all the unit locations plus important details of the listings, such as minimum,
+# maximum, and mean.
+
+## METHOD
+
+# 1) First, I collected the data from streeteasy.com - where I selected the 5 boroughs under "location" as 
+# well as "income-restricted" under "more" filters - and ended up with 196 addresses.
+# 2) However, I knew that for each address I wanted to have the monthly maintenance fee information as well 
+# as the maximum Area Median Income (AMI) allowed for an applicant to qualify to purchase the unit, and I noticed
+# some of the units did not list AMI or maintenance fee info. After removing these addresses, I was left with 160
+# addresses.
+# 3) Then, I used the Google Maps API to geocode the addresses, which create new "lon" and "lat" columns and added
+# them to the dataset, which I exported as a new csv file.
+# 4) Then, I created my file hdfc_shiny_leaflet.R, read in the file and created the dashboard using the libraries
+# shiny, shinydashboard, ggplot2, dplyr, and "leaflet".
