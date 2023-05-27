@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 library("leaflet")
 
-hdfc <- read.csv('/Users/sarakim/Documents/r_shiny_practice/hdfc.csv', 
+hdfc <- read.csv('file path', 
                  stringsAsFactors = FALSE, header = TRUE)
 
 # Dashboard header carrying the title of the dashboard
